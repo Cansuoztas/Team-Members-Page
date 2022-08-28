@@ -2,32 +2,40 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+  
   }
   
   body {
-    background-color: #f0f0f0;
-    margin: 3rem 6rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 5% auto;
+  
+  
   }
   
   header {
     display: flex;
-    margin-bottom: 3rem;
-    padding: 1rem 0.2rem;
-    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    align-items: center;
   }
   
   .header1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    font-size: 1.1rem;
+    font-size: 1rem;
+  text-align: center;
+  width: 50%
+
   }
   
-  .header2 {
-    width: 450px;
+  .paragraf {
     font-size: 1.2rem;
+    text-align: center;
+    text-align: justify;
+    width: 50%
   }
   
   main {
@@ -43,71 +51,65 @@
     justify-content: center;
     transition: all 1s ease-in-out;
     cursor: pointer;
+    gap: 1rem;
   }
   
   .allpics img {
-    width: 250px;
-    box-shadow: 5px 5px 20px black;
-    border-radius: 10px;
+    width: 85%;
+    margin-bottom: 10%;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 0.5rem;
   }
-  
-  .pic1,
-  .pic2, 
-  .pic3 ,
-  .pic4 ,
-  .pic5 ,
-  .pic6 {
-    width: 290px;
+  .pic-1,
+  .pic-4{
+    margin-top: 3rem;
+    width:85%;
     position: relative;
+    
+    max-width: 250px;
+   
   }
+  .pic-3 ,
+  .pic-6 {
+    width:85%;
+    position: relative;
+
+    max-width: 250px;
+  }
+
   
-  .pic2,
-  .pic5 {
-    margin-top: 10rem;
+  .pic-2,
+  .pic-5 {
+    margin-top: 6rem;
+    width: 85%;
+    position: relative;
+    max-width: 250px;
   }
+
   
   .job {
-    transform: rotate(90deg);
-    position: absolute;
+    writing-mode: vertical-rl;
+    transform: translate(240px, -280px);   
+    font-size: 15px;  
   }
   
-  .pic-1 .job {
-    right: -50px;
-    top: 70px;
-  }
   
-  .pic-2 .job {
-    right: -40px;
-    top: 55px;
-  }
-  .pic-3 .job {
-    right: -25px;
-    top: 45px;
-  }
-  .pic-4 .job {
-    right: -35px;
-    top: 55px;
-  }
-  .pic-5 .job {
-    right: -30px;
-    top: 45px;
-  }
-  .pic-6 .job {
-    right: -30px;
-    top: 45px;
-  }
-  
+
   .name {
     margin-top: 1.5rem;
+    margin: 2px;
+    font-size: 15px;   
+    font-weight: bold;
   }
   
-  .allpics:hover {
-    transform: scale(115%);
-  }
-  
+ .allpics:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 0.9;
+  } 
   .allpics:hover img {
-    transition: box-shadow 1s ease-in-out;
-    box-shadow: 2px 2px 20px rgb(80, 80, 80);
+    transition: box-shadow 1s ;
+    box-shadow: 8px 8px 10px rgb(24, 23, 23);
   }
   
   @media screen and (max-width: 1090px) {
@@ -121,9 +123,9 @@
       margin-bottom: 2rem;
     }
   
-    .header2 {
+    .paragraf {
       width: 100%;
-      margin-bottom: -1rem;
+      margin-bottom: 1rem;
     }
   
     .allpics {
@@ -141,11 +143,11 @@
     .pic-4,
     .pic-6 {
       margin-top: 0;
-      margin-top: 7rem;
+      margin-top: 6rem;
     }
   }
   
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 740px) {
     .allpics {
       width: 100%;
     }
@@ -154,7 +156,7 @@
       margin: 0;
       padding: 3rem;
       width: 100%;
-      min-width: 400px;
+      min-width: 300px;
     }
   
     .pic-1,
@@ -164,11 +166,11 @@
     .pic-5,
     .pic-6 {
       margin-top: 0;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
   
-    .header2 {
-      padding-left: 3rem;
+    .paragraf {
+      padding-left: 2rem;
     }
   }
   
